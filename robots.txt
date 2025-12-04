@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://seusite.com
+Sitemap: https://nin4123.github.io/site/
