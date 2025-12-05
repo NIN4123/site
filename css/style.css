@@ -1,0 +1,239 @@
+/* ============================
+   RESET
+============================ */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    background: #f2f2f2;
+    color: #222;
+    line-height: 1.6;
+}
+
+/* ============================
+   NAVBAR MODERNA
+============================ */
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px 25px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    background: rgba(30, 30, 30, 0.75);
+    backdrop-filter: blur(12px);
+
+    border-bottom: 1px solid rgba(255,255,255,0.10);
+    border-radius: 0 0 20px 20px;
+    box-shadow: 0 4px 18px rgba(0,0,0,0.22);
+    z-index: 1000;
+}
+
+nav h1 {
+    font-size: 20px;
+    color: white;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 70%;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 16px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    background: rgba(255,255,255,0.06);
+    padding: 6px 10px;
+    border-radius: 8px;
+    font-size: 13px;
+    transition: 0.3s;
+}
+
+nav ul li a:hover {
+    background: rgba(255,255,255,0.22);
+}
+
+/* Ajuste para compensar navbar fixa */
+section, header {
+    padding-top: 120px;
+}
+
+/* ============================
+   CONTAINER PRINCIPAL
+============================ */
+.container {
+    width: 100%;
+    max-width: 1100px;
+    margin: auto;
+    padding: 20px;
+}
+
+/* Títulos das seções */
+h2 {
+    font-size: 28px;
+    margin-bottom: 12px;
+    color: #1a1a1a;
+    position: relative;
+}
+
+h2::after {
+    content: "";
+    width: 50px;
+    height: 4px;
+    background: #333;
+    border-radius: 2px;
+    position: absolute;
+    bottom: -6px;
+    left: 0;
+}
+
+/* Parágrafos */
+p {
+    font-size: 16px;
+    color: #444;
+}
+
+/* ============================
+   CARDS / SEÇÕES
+============================ */
+.card {
+    background: white;
+    padding: 25px;
+    border-radius: 16px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    margin-bottom: 30px;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 18px rgba(0,0,0,0.12);
+}
+
+/* ============================
+   ÍCONES MENORES E BONITOS
+============================ */
+.icon {
+    width: 35px;
+    height: 35px;
+    margin-right: 8px;
+}
+
+/* ============================
+   GALERIA DE CAPAS
+============================ */
+.galeria {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 22px;
+    margin-top: 20px;
+}
+
+.galeria img {
+    width: 100%;
+    border-radius: 14px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+    transition: 0.3s;
+}
+
+.galeria img:hover {
+    transform: scale(1.04);
+}
+
+/* ============================
+   GLOSSÁRIO MODERNO
+============================ */
+.glossario {
+    background: white;
+    padding: 25px;
+    border-radius: 16px;
+    box-shadow: 0 3px 12px rgba(0,0,0,0.10);
+    margin-top: 40px;
+}
+
+.glossario h3 {
+    font-size: 24px;
+    margin-bottom: 16px;
+}
+
+.glossario ul {
+    list-style: none;
+}
+
+.glossario li {
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.glossario strong {
+    color: #333;
+}
+
+/* ============================
+   RODAPÉ MODERNO
+============================ */
+footer {
+    margin-top: 50px;
+    text-align: center;
+    padding: 25px;
+    background-color: #111;
+    border-top: 2px solid #ffd369;
+}
+
+footer img {
+    width: 100px;
+    margin-top: 10px;
+}
+/* ============================
+   RESPONSIVIDADE
+============================ */
+@media (max-width: 700px) {
+
+    nav {
+        padding: 8px 15px;
+    }
+
+    nav h1 {
+        font-size: 17px;
+        max-width: 55%;
+    }
+
+    nav ul li a {
+        padding: 4px 7px;
+        font-size: 11px;
+    }
+
+    .container {
+        padding: 10px;
+    }
+
+    h2 {
+        font-size: 22px;
+    }
+
+    .galeria {
+        grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    }
+
+    .card {
+        padding: 18px;
+    }
+
+    .icon {
+        width: 28px;
+        height: 28px;
+    }
+}

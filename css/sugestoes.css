@@ -1,0 +1,146 @@
+/* ============================
+   ESTILO DA PÁGINA SUGESTÕES
+   ============================ */
+
+body {
+    background: #1c1c1c;
+    font-family: "Poppins", Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #f2f2f2;
+}
+
+/* ====== HEADER ====== */
+header {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+header h1 {
+    font-size: 2.8rem;
+    margin-bottom: 10px;
+    color: #ffd86b;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+/* Botão de Voltar (Início) */
+header a {
+    display: inline-block;
+    margin-top: 5px;
+    padding: 8px 14px;
+    background: #3a3a3a;
+    color:  #ffdd55;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: 0.3s;
+    border: 1px solid #555;
+}
+
+header a:hover {
+    background: #555;
+    transform: scale(1.05);
+}
+
+header img {
+    margin-top: 20px;
+    border-radius: 15px;
+    border: 3px solid #ffcc00;
+}
+
+/* ====== TÍTULOS ====== */
+main h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-top: 10px;
+    color: #ffd86b;
+}
+
+/* ====== FORMULÁRIO ====== */
+form {
+    width: 90%;
+    max-width: 600px;
+    margin: 30px auto;
+    background: #2a2a2a;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 0 15px rgba(255, 204, 0, 0.2);
+    border-left: 4px solid #ffcc00;
+}
+
+label {
+    font-size: 1.2rem;
+    display: block;
+    margin-bottom: 5px;
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 12px;
+    border-radius: 8px;
+    border: none;
+    margin-bottom: 15px;
+    background: #3a3a3a;
+    color: white;
+    font-size: 1rem;
+}
+
+input::placeholder,
+textarea::placeholder {
+    color: #cccccc;
+}
+
+select {
+    cursor: pointer;
+}
+
+textarea {
+    resize: none;
+}
+
+button {
+    width: 100%;
+    background: #ffcc00;
+    border: none;
+    padding: 15px;
+    font-size: 1.2rem;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+    font-weight: bold;
+}
+
+button:hover {
+    background: #ffe48a;
+    transform: scale(1.03);
+    box-shadow: 0 0 15px #ffcc00;
+}
+
+/* ===== FOOTER ====== */
+footer {
+    margin-top: 50px;
+    text-align: center;
+    padding: 25px;
+    background-color: #111;
+    border-top: 2px solid #ffd369;
+}
+
+footer img {
+    width: 100px;
+    margin-top: 10px;
+}
+
+/* ====== RESPONSIVIDADE ====== */
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 2.2rem;
+    }
+
+    form {
+        padding: 20px;
+    }
+
+    button {
+        font-size: 1rem;
+    }
+}
